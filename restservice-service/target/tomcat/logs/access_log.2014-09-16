@@ -1,2 +1,0 @@
-127.0.0.1 - - [16/Sep/2014:22:22:07 +0800] "GET /service/api/v1/version/x?v=1.0a HTTP/1.1" 304 - http-bio-8088-exec-1 174
-127.0.0.1 - - [16/Sep/2014:22:22:11 +0800] "GET /service/api/v1/version/x?v=1.0a HTTP/1.1" 304 - http-bio-8088-exec-2 8
