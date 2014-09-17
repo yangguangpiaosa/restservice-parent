@@ -23,8 +23,8 @@ public class ResourceHandlerV1 extends ResourceConfig {
 		//register(Test.class);
 		
 		register(MoxyXmlFeature.class);
-        register(MoxyJsonFeature.class);
-        //register(MOXyJsonProvider.class);
+		register(MoxyJsonFeature.class);
+		//register(MOXyJsonProvider.class);
 		//注册JSON转换器
 		//register(JacksonJsonProvider.class);
 		
