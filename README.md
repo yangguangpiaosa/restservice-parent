@@ -1,6 +1,5 @@
-This is a restful webservice project implemented by Jersey.
-
+##This is a restful webservice project implemented by Jersey.
 ==============
 Jersey:
-https://jersey.java.net/
-https://github.com/jersey/jersey
+* [Jersey](https://jersey.java.net/)
+* [Jersey GitHub](https://github.com/jersey/jersey)
