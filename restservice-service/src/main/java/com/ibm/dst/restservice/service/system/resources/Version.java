@@ -1,4 +1,4 @@
-package com.ibm.dst.restservice.service.v1.system.resources;
+package com.ibm.dst.restservice.service.system.resources;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
@@ -14,7 +14,7 @@ import javax.ws.rs.core.Response;
 import org.apache.log4j.Logger;
 
 import com.ibm.dst.restservice.service.core.Resource;
-import com.ibm.dst.restservice.service.v1.system.model.VersionModel;
+import com.ibm.dst.restservice.service.system.model.VersionModel;
 
 //@Path("/version")
 public class Version extends Resource {

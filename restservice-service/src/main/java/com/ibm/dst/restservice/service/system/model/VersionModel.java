@@ -1,4 +1,4 @@
-package com.ibm.dst.restservice.service.v1.system.model;
+package com.ibm.dst.restservice.service.system.model;
 
 import javax.ws.rs.core.EntityTag;
 import javax.xml.bind.annotation.XmlAccessType;

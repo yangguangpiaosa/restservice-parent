@@ -15,7 +15,7 @@ public class Resource {
 	
 	@Context UriInfo uriInfo;
 	
-	protected Response notModified(BaseModel result, Request request) {
+	protected Response ifNotModified(BaseModel result, Request request) {
 		if(null == result) 
 			return message(Response.Status.NOT_FOUND, 40400, null);
 		ResponseBuilder builder = request.evaluatePreconditions(result.getETag());

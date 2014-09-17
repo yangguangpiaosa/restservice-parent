@@ -3,6 +3,8 @@
  */
 package com.ibm.dst.restservice.service.core;
 
+import javax.ws.rs.ApplicationPath;
+
 import org.apache.log4j.Logger;
 import org.glassfish.jersey.moxy.json.MoxyJsonFeature;
 import org.glassfish.jersey.moxy.xml.MoxyXmlFeature;
@@ -12,14 +14,14 @@ import org.glassfish.jersey.server.ResourceConfig;
  * @author 
  *
  */
-//@ApplicationPath("/api/v1")
-public class ResourceHandlerV1 extends ResourceConfig {
+@ApplicationPath("/api")
+public class ResourceHandler extends ResourceConfig {
 	
-	private static final Logger logger = Logger.getLogger(ResourceHandlerV1.class);
+	private static final Logger logger = Logger.getLogger(ResourceHandler.class);
 	
-	public ResourceHandlerV1() {
+	public ResourceHandler() {
 		logger.info("init service...");
-		packages("com.ibm.dst.restservice.service.v1.system.resources");
+		packages("com.ibm.dst.restservice.service.system.resources");
 		//register(Test.class);
 		
 		register(MoxyXmlFeature.class);
