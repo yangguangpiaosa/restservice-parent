@@ -10,6 +10,9 @@ import org.glassfish.jersey.moxy.json.MoxyJsonFeature;
 import org.glassfish.jersey.moxy.xml.MoxyXmlFeature;
 import org.glassfish.jersey.server.ResourceConfig;
 
+import com.ibm.dst.restservice.service.core.filter.AuthorityFilter;
+import com.ibm.dst.restservice.service.core.filter.DecodeFilter;
+
 /**
  * @author 
  *
@@ -21,6 +24,8 @@ public class ResourceHandler extends ResourceConfig {
 	
 	public ResourceHandler() {
 		logger.info("init service...");
+		register(DecodeFilter.class);
+		register(AuthorityFilter.class);
 		packages("com.ibm.dst.restservice.service.system.resources");
 		//register(Test.class);
 		
