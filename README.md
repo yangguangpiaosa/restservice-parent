@@ -19,7 +19,7 @@ Command Line:
 ```javascript
 mvn clean tomcat7:run
 ```
-After that, you can check the result with browser or RestClient(a plugin for rest webservice test).
+After that, you can check the result(http://localhost:8088/service/api/users) with browser or RestClient(a plugin for rest webservice test).
 Remember that you must put app id and app key in the request header. You can define the id and key in authority.properties.
 
 ========
