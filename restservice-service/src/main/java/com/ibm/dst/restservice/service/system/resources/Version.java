@@ -13,11 +13,11 @@ import javax.ws.rs.core.Response;
 
 import org.apache.log4j.Logger;
 
-import com.ibm.dst.restservice.service.core.Resource;
+import com.ibm.dst.restservice.service.core.BaseResource;
 import com.ibm.dst.restservice.service.system.model.VersionModel;
 
 //@Path("/version")
-public class Version extends Resource {
+public class Version extends BaseResource {
 	
 	private static final Logger logger = Logger.getLogger(Version.class);
 	

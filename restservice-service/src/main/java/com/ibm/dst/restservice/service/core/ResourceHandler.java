@@ -26,7 +26,10 @@ public class ResourceHandler extends ResourceConfig {
 		logger.info("init service...");
 		register(DecodeFilter.class);
 		register(AuthorityFilter.class);
-		packages("com.ibm.dst.restservice.service.system.resources");
+		StringBuffer packs = new StringBuffer("");
+		packs.append("com.ibm.dst.restservice.service.system.resources");
+		packs.append(",com.ibm.dst.restservice.service.user.resources");
+		packages(packs.toString());
 		//register(Test.class);
 		
 		register(MoxyXmlFeature.class);

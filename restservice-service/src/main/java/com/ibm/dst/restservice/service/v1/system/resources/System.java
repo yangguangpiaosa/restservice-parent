@@ -11,12 +11,12 @@ import javax.ws.rs.core.Response;
 
 import org.apache.log4j.Logger;
 
-import com.ibm.dst.restservice.service.core.Resource;
+import com.ibm.dst.restservice.service.core.BaseResource;
 import com.ibm.dst.restservice.service.v1.system.model.AboutModel;
 import com.ibm.dst.restservice.service.v1.system.model.VersionModel;
 
 @Path("")
-public class System extends Resource {
+public class System extends BaseResource {
 	
 	private static final Logger logger = Logger.getLogger(System.class);
 	

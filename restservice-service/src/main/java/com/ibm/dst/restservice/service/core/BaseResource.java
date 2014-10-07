@@ -8,10 +8,14 @@ import javax.ws.rs.core.Response.Status;
 import javax.ws.rs.core.UriInfo;
 
 import org.apache.log4j.Logger;
+import org.springframework.beans.factory.annotation.Autowired;
 
-public class Resource {
+public class BaseResource {
 	
-	private static final Logger logger = Logger.getLogger(Resource.class);
+	private static final Logger logger = Logger.getLogger(BaseResource.class);
+	
+	@Autowired
+	protected Constants constants = null;
 	
 	@Context UriInfo uriInfo;
 	
@@ -25,7 +29,7 @@ public class Resource {
 	}
 	
 	protected Response message(Status status, int msgCode, Throwable t) {
-		Message msg = new Message(msgCode, "msg");
+		Message msg = new Message(msgCode, constants.messageMap.get(String.valueOf(msgCode)));
 		if(null != t) {
 			logger.error("Request URI:" + uriInfo.getRequestUri() + " Message:" + msg.getMsg(), t);
 		} else {
