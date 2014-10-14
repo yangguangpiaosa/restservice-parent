@@ -52,8 +52,8 @@ public class User extends BaseResource {
 		if(id.equals("1")) {
 			UserModel user = new UserModel();
 			user.setId(1);
-			user.setName("test");
-			user.setEmail("test@cn.ibm.com");
+			user.setName("test1");
+			user.setEmail("test1@cn.ibm.com");
 			user.setETag(new EntityTag(String.valueOf(user.getId().hashCode())));
 			return ifNotModified(user, request);
 		} else {

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<usersModel>
+    <users>
+        <user>
+            <id>1</id>
+            <name>test1</name>
+            <email>test1@cn.ibm.com</email>
+        </user>
+        <user>
+            <id>2</id>
+            <name>test2</name>
+            <email>test2@cn.ibm.com</email>
+        </user>
+    </users>
+</usersModel>
