@@ -73,13 +73,12 @@ public class BaseResourceTest extends BaseTest {
 		Map<String, Map<String, String>> pathParams = new HashMap<String, Map<String, String>> ();
 		Map<String, Map<String, String>> queryParams = new HashMap<String, Map<String, String>> ();
 		
-		this.packParams(uriValidateMap, pathParams, queryParams);
+		packParams(uriValidateMap, pathParams, queryParams);
 		
 		Set<Map.Entry<String, String>> set = uriValidateMap.entrySet();
 		for(Iterator<Map.Entry<String, String>> it=set.iterator();it.hasNext();) {
 			Map.Entry<String, String> validate = it.next();
-			String [] arr = validate.getKey().split(",");
-			Response res = super.sendRequest(arr[0], 
+			Response res = super.sendRequest(validate.getKey().split(",")[0], 
 											pathParams.get(validate.getKey()), 
 											queryParams.get(validate.getKey()), 
 											MediaType.APPLICATION_JSON, 
