@@ -430,4 +430,12 @@
 	</dependencies>
   </dependencyManagement>
   
+  <description>A Restful Webservice.</description>
+  <organization>
+  	<name>opensourceteam</name>
+  </organization>
+  <scm>
+  	<connection>git@github.com:yangguangpiaosa/restservice-parent.git</connection>
+  	<developerConnection>git@github.com:yangguangpiaosa/restservice-parent.git</developerConnection>
+  </scm>
 </project>
