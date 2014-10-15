@@ -1,5 +1,4 @@
-##This is a restful webservice project implemented by Jersey.
-
+##restservice(-parent) a restful webservice project implemented by Jersey.
 ========
 ###Project Structure:
 * restservice-parent is a aggregate project.
@@ -10,6 +9,8 @@
 ###Change Log:
 * 2014-09-17  Initialize project.
 * 2014-10-07  Add Spring support, add demo service(i.e. user service) code.
+* 2014-10-13  Add unit test(easymock, spring test), add jaxb parser.
+* 2014-10-14  Add demo service test, add json schema test.
 
 ========
 ###Run it:
