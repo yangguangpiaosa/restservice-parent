@@ -1,4 +1,5 @@
 ##restservice(-parent) a restful webservice project implemented by Jersey.
+[![Build Status](https://travis-ci.org/yangguangpiaosa/restservice-parent.svg)](https://travis-ci.org/yangguangpiaosa/restservice-parent)
 ========
 ###Project Structure:
 * restservice-parent is a aggregate project.
