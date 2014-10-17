@@ -34,13 +34,13 @@ public class BaseResourceTest extends BaseTest {
 	
 	private static final Logger logger = Logger.getLogger(BaseResourceTest.class);
 	
-	@Test
+	//@Test
 	public void testClient() {
 		logger.info("UnitTest - BaseResourceTest :: testClient");
 		Assert.assertNotNull(super.client);
 	}
 	
-	@Test
+	//@Test
 	public void testAppKey() {
 		logger.info("UnitTest - BaseResourceTest :: testAppKey");
 		Assert.assertTrue(true);
@@ -66,7 +66,7 @@ public class BaseResourceTest extends BaseTest {
         }
 	}
 	
-	@Test
+	//@Test
 	public void validateJson() throws ProcessingException, IOException {
 		logger.info("UnitTest - BaseResourceTest :: validateJson");
 		Map<String, String> uriValidateMap = new HashMap<String, String> ();

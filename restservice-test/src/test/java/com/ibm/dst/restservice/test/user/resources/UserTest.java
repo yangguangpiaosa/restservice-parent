@@ -32,7 +32,7 @@ public class UserTest extends BaseTest {
 	
 	private static final Logger logger = Logger.getLogger(UserTest.class);
 	
-	@Test
+	//@Test
 	public void testGetUsers() {
 		logger.info("UnitTest - UserTest :: testGetUsers");
 		Response res = null;
@@ -63,7 +63,7 @@ public class UserTest extends BaseTest {
 	}
 	
 	@SuppressWarnings("serial")
-	@Test
+	//@Test
 	public void testGetUserById() {
 		logger.info("UnitTest - UserTest :: testGetUserById");
 		Response res = null;
