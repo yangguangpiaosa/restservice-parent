@@ -1,3 +1,9 @@
 /target
+/.idea
+/*.iml
+
 /restservice-service/target
+/restservice-service/*.iml
+
 /restservice-test/target
+/restservice-test/*.iml
